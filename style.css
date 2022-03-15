@@ -3,3 +3,10 @@ body{
     color: rgb(174, 226, 97);
 }
 
+.divCadastro{
+    border-radius: 5px;
+    background-color: honeydew;
+    margin-left: 35%;
+    width: 40%;
+    margin-top: 1%;
+}
