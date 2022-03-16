@@ -10,3 +10,19 @@ body{
     width: 40%;
     margin-top: 1%;
 }
+
+.bottom_nav{
+    background-color: grey;
+    color: grey;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.vasco{
+    size: 10px;
+    height: 50px;
+    width: 50px;
+}
+
