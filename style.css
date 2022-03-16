@@ -1,10 +1,10 @@
 body{
-    background-color: rgb(174, 226, 97);
+    background-color: rgb(100, 130, 255);
     color: rgb(174, 226, 97);
 }
 
 .divCadastro{
-    border-radius: 5px;
+    border-radius: 20px;
     background-color: honeydew;
     margin-left: 30%;
     width: 40%;
@@ -14,7 +14,7 @@ body{
 
 .bottom_nav{
     background-color: lightblue;
-    color: lightgreen;
+    color:lightblue;
     height: 55px;
     width: 100%;
     position: absolute;
@@ -30,9 +30,16 @@ body{
 
 .texto_inicio{
     color: black;
-    margin-left: 35%;
+    margin-left: 45%;
     margin-right: 30%;
-    font-size: 300%;
+    font-size: 200%;
+}
+.butao{
+    margin-left: 70%;
+
+}
+.nav-wrapper{
+    background-color: rgb(105, 135, 240);
 
 }
 
