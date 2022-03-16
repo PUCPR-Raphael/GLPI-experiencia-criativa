@@ -12,12 +12,13 @@ body{
 }
 
 .bottom_nav{
-    background-color: grey;
-    color: grey;
-    height: auto;
+    background-color: lightgreen;
+    color: lightgreen;
+    height: 55px;
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: 1%;
+    border-radius: 8px;
 }
 
 .vasco{
