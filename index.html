@@ -1,82 +1,91 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="style.css">
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
+<html>
 
-    <body>
-      
-      <nav>
-        <div class="nav-wrapper">
-          <div class="brand-logo center">Cadastro Sistema PPCS</div>
-          <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li><a href="sass.html">Home</a></li>
-            <li><a href="badges.html">Login</a></li>
-            <li><a href="collapsible.html">Chamados</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="texto_inicio">Digite suas credenciais para se cadastrar</div>
-        <div class="divCadastro">
-            <div class="row">
-                <form class="col s12">
-                  <div class="row">
-                    <div class="input-field col s12">
-                        <input id="last_name" type="text" class="validate">
-                        <label for="last_name">Usuário</label>
-                      </div>
-                  </div>
-                  <div class="row">
-                    <div class="input-field col s12">
-                        <input id="password" type="password" class="validate">
-                        <label for="password">Senha</label>
-                    </div>    
-                  </div>
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <input id="password_confirma" type="password" class="validate">
-                      <label for="password_confirma">Confirmação de senha</label>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <input id="email" type="email" class="validate">
-                      <label for="email">Email</label>
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <div class="butao"><a class="waves-effect waves-light btn"><i class="material-icons right">send</i>Enviar</a></div>        
-        </div>
-        
-        <div class="bottom_nav">
-            <div class="bottom_nav">
-              <div class="row valign-wrapper">
-                <div class="col s12">
-                  <span class="black-text">
-                    <strong>🔥Projeto PPCS - Módulo de integração com o GLPI🔥 </strong><br>
-                    Pontifícia Universidade Católica do Paraná.
-                  </span>
-                </div>
-                <div class="col s12">
-                  <span class="black-text">
-                  <strong><em>🔥Feito por Raphael e Ian</em></strong><br>
-                  </span>
-                </div>
-              </div>
-            </div>
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="scripts.js"></script>
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-wrapper">
+      <div class="brand-logo center">Cadastro Sistema PPCS</div>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="sass.html">Home</a></li>
+        <li><a href="badges.html">Login</a></li>
+        <li><a href="collapsible.html">Chamados</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="texto_inicio">Digite suas credenciais para se cadastrar</div>
+  <div class="divCadastro">
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="nome" type="text" class="">
+            <label for="nome">Usuário</label>
           </div>
-                
-      <!--JavaScript at end of body for optimized loading-->
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-    </body>
-  </html>
+          <div class="input-field col s12">
+            <input id="setor" type="text" class="">
+            <label for="setor">Setor</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="senha" type="password" class="">
+            <label for="senha">Senha</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="senha_confirma" type="password" class="">
+            <label for="senha_confirma">Confirmação de senha</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email" type="email" class="validate">
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <div id="mensagem_erro" class="erro"></div>
+      </form>
+    </div>
+    <div class="butao"><a onclick="cadastro()" class="waves-effect waves-light btn"><i
+          class="material-icons right">send</i>Enviar</a></div>
+  </div>
+
+  <div class="bottom_nav">
+    <div class="bottom_nav">
+      <div class="row valign-wrapper">
+        <div class="col s12">
+          <span class="black-text">
+            <strong>🔥Projeto PPCS - Módulo de integração com o GLPI🔥 </strong><br>
+            Pontifícia Universidade Católica do Paraná.
+          </span>
+        </div>
+        <div class="col s12">
+          <span class="black-text">
+            <strong><em>🔥Feito por Raphael e Ian</em></strong><br>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+</html>

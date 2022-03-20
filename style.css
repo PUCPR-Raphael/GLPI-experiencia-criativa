@@ -1,10 +1,10 @@
 body{
-    background-color: rgb(100, 130, 255);
+    background-color: rgb(162, 179, 247);
     color: rgb(174, 226, 97);
 }
 
 .divCadastro{
-    border-radius: 20px;
+    border-radius: 15px;
     background-color: honeydew;
     margin-left: 30%;
     width: 40%;
@@ -15,27 +15,32 @@ body{
 .bottom_nav{
     background-color: lightgrey;
     color:lightgrey;
-    height: 50px;
+    
     width: 100%;
     position: absolute;
     bottom: 1%;
-    border-radius: 200px;
+    border-radius: 130px;
     border-style: double;
 }
 
 
 .texto_inicio{
-    color: black;
-    margin-left: 40%;
-    margin-right: 30%;
-    font-size: 170%;
+    margin: 10px;
+    color: white;
+    text-align: center;
+    font-size: 150%;
 }
 .butao{
-    margin-left: 70%;
-
+    margin-right: 20px;
+    height: 40px;
+    text-align: right;
 }
 .nav-wrapper{
     background-color: rgb(105, 135, 240);
 
+}
+.erro{
+    border-radius: 5px;
+    text-align: center;
 }
 
