@@ -15,9 +15,10 @@ body{
 .bottom_nav{
     background-color: lightgrey;
     color:lightgrey;
-    
+    text-align: center;
     width: 100%;
     position: absolute;
+    height: 50px;
     bottom: 1%;
     border-radius: 130px;
     border-style: double;

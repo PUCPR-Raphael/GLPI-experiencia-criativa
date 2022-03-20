@@ -14,7 +14,6 @@ function cadastro() {
         document.getElementById("mensagem_erro").style.backgroundColor = "lightcoral"
         document.getElementById("mensagem_erro").innerHTML = "As senhas não coincidem"
     } else {
-        auxDadosCadastro = []
         document.getElementById("mensagem_erro").style.color = "green"
         document.getElementById("mensagem_erro").style.backgroundColor = "lightgreen"
         document.getElementById("mensagem_erro").innerHTML = "Cadastro Realizado!"
