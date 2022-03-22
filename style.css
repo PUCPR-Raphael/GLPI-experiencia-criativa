@@ -54,4 +54,5 @@ body {
     position: absolute;
     margin-top: 8%;
     margin-left: 33%;
+    width: min(50vw, 500px);
 }
