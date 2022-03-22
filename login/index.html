@@ -15,7 +15,7 @@
     <!-- Place your kit's code here -->
     <script src="https://kit.fontawesome.com/9ffab05804.js" crossorigin="anonymous"></script>
 
-    <title>INDEX</title>
+    <title>Login - PPCS</title>
 </head>
 
 <body>
@@ -30,7 +30,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="/index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/login/">Login</a>
@@ -43,8 +43,28 @@
             </div>
         </div>
     </nav>
-    <div>  
-        <img src=""
+
+    <div class="formulario">
+      <span class="titulo">Logar-se</span>
+        <form>
+            <div class="mb-3"><br>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="&#xF007; Usuário" style="font-family:Arial, FontAwesome" />
+            </div>
+            <div class="mb-3">
+                <input type="password" class="form-control" id="exampleInputPassword1"  placeholder="&#xF023; Senha" style="font-family:Arial, FontAwesome" /><br>
+                <div class="col-auto">
+                    <span id="passwordHelpInline" class="form-text">
+                        <a href="#" style="margin-left: 45%;">Eu esqueci a senha!</a>
+                    </span>
+                </div>
+            </div>
+            <div class="mb-3form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Lembrar de mim.</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar</button>
+            <br>
+        </form>
     </div>
 
     <div class="container">
