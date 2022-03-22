@@ -2,15 +2,35 @@
     margin-top: 10%;
     width: 30%;
     margin-left: 35%;
+    background-color: aliceblue;
+    border-radius: 30px;
+}
+
+.mb-3{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.mb-3form-check{
+    margin-left: 27%;
+    margin-bottom: 3%;
+}
+
+.btn{
+    margin-left: 25%;
+    margin-bottom: 3%;
+    width: 50%;
+    border-radius: 20px;
 
 }
 
 .container{
     background: aliceblue;
-    margin-top: 7%;
+    margin-top: 5%;
     border-radius: 10px;
 }
-
 
 
 body {
@@ -20,5 +40,12 @@ body {
 
 .form-text{
     color: black;
-    font-size: 100%;
+    font-size: 90%;
+}
+
+.titulo{
+    font-size: 300%;
+    margin-left: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
