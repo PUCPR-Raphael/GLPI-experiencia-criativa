@@ -1,0 +1,24 @@
+.formulario{
+    margin-top: 10%;
+    width: 30%;
+    margin-left: 35%;
+
+}
+
+.container{
+    background: aliceblue;
+    margin-top: 7%;
+    border-radius: 10px;
+}
+
+
+
+body {
+	background: rgb(150, 171, 247);
+
+}
+
+.form-text{
+    color: black;
+    font-size: 100%;
+}

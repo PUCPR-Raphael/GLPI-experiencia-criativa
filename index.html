@@ -1,82 +1,98 @@
-<!DOCTYPE html>
-  <html>
-    <head>
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="style.css">
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
+<!doctype html>
+<html lang="pt-br">
 
-    <body>
-      
-      <nav>
-        <div class="nav-wrapper">
-          <div class="brand-logo center">Cadastro Sistema PPCS</div>
-          <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li><a href="sass.html">Home</a></li>
-            <li><a href="badges.html">Login</a></li>
-            <li><a href="collapsible.html">Chamados</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="texto_inicio">Digite suas credenciais para se cadastrar</div>
-        <div class="divCadastro">
-            <div class="row">
-                <form class="col s12">
-                  <div class="row">
-                    <div class="input-field col s12">
-                        <input id="last_name" type="text" class="validate">
-                        <label for="last_name">Usuário</label>
-                      </div>
-                  </div>
-                  <div class="row">
-                    <div class="input-field col s12">
-                        <input id="password" type="password" class="validate">
-                        <label for="password">Senha</label>
-                    </div>    
-                  </div>
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <input id="password_confirma" type="password" class="validate">
-                      <label for="password_confirma">Confirmação de senha</label>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <input id="email" type="email" class="validate">
-                      <label for="email">Email</label>
-                    </div>
-                  </div>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <!-- Place your kit's code here -->
+    <script src="https://kit.fontawesome.com/9ffab05804.js" crossorigin="anonymous"></script>
+
+    <title>Cadastro - PPCS</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">PPCS 🔥</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cadastro</a>
+                    </li>
+                </ul>
                 </form>
-              </div>
-              <div class="butao"><a class="waves-effect waves-light btn"><i class="material-icons right">send</i>Enviar</a></div>        
-        </div>
-        
-        <div class="bottom_nav">
-            <div class="bottom_nav">
-              <div class="row valign-wrapper">
-                <div class="col s12">
-                  <span class="black-text">
-                    <strong>🔥Projeto PPCS - Módulo de integração com o GLPI🔥 </strong><br>
-                    Pontifícia Universidade Católica do Paraná.
-                  </span>
-                </div>
-                <div class="col s12">
-                  <span class="black-text">
-                  <strong><em>🔥Feito por Raphael e Ian</em></strong><br>
-                  </span>
-                </div>
-              </div>
             </div>
-          </div>
-                
-      <!--JavaScript at end of body for optimized loading-->
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-    </body>
-  </html>
+        </div>
+    </nav>
+
+    <div class="formulario">
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Usuário </label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+                <label for="exampleInputPassword1" class="form-label">Confirmar senha</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+                <div class="col-auto">
+                    <span id="passwordHelpInline" class="form-text">
+                        Uma senha válida deve ter pelo menos 8 caracteres.
+                    </span>
+                </div>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Concordo com os termos.</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text">&copy; 2022 Projeto para a PUCPR, Feito por Raphael e Ian.</p>
+
+            <a href="/"
+                class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap" />
+                </svg>
+            </a>
+
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text">Login</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text">Cadastro</a></li>
+            </ul>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
