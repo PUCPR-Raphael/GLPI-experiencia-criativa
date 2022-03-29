@@ -1,9 +1,16 @@
 .formulario{
-    margin-top: 10%;
+    margin-top: 1%;
     width: 30%;
     margin-left: 35%;
     background-color: aliceblue;
     border-radius: 30px;
+    text-align: center;
+    min-width: auto;
+    min-height: auto;
+}
+
+.texto-titulo{
+    margin: 4px;
 }
 
 .mb-3{
@@ -19,10 +26,10 @@
 }
 
 .btn{
-    margin-left: 25%;
+    text-align: center;
     margin-bottom: 3%;
-    width: 50%;
-    border-radius: 20px;
+    width: 60%;
+    border-radius: 10px;
 
 }
 
@@ -45,7 +52,7 @@ body {
 
 .titulo{
     font-size: 180%;
-    margin-left: 25%;
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-
+    margin-top: 1%;
 }
