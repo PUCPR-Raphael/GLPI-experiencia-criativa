@@ -48,7 +48,7 @@
       <span class="titulo">Logar-se</span>
         <form>
             <div class="mb-3"><br>
-                <input type="text" class="form-control" id="UserName" aria-describedby="emailHelp" placeholder="&#xF007; Usuário" style="font-family:Arial, FontAwesome" />
+                <input type="text" class="form-control" id="UserName" aria-describedby="emailHelp" placeholder="&#xF007; Usuário" style="font-family:Arial, FontAwesome" maxlength="25" onkeyup="if (/[^|a-z0-9]+/g.test(this.value)) this.value = this.value.replace(/[^|a-z0-9-._A-Z]+/g,'')"/>
             </div>
             <div class="mb-3">
                 <input type="password" class="form-control" id="exampleInputPassword1"  placeholder="&#xF023; Senha" style="font-family:Arial, FontAwesome" /><br>
